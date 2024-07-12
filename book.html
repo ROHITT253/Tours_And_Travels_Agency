@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+    <style>
+        .heading{
+            background-color: aqua;  
+            font-size: 40px;
+            width: 100%;
+            text-align: center;
+            padding: 40px;
+        }
+        .btn2{
+          padding: 10px;
+          font-size: 20px;
+          border-radius: 8px;
+          background-color: rgb(17, 17, 17);
+          color: white;
+          margin-left: 48%;
+          margin-top: 1%;
+        }
+        .heading-title{
+            background-color: white;
+            padding: 8px;
+            font-size: 45px;
+            text-align: center;
+            width: 100%;
+        }
+        .flex{
+            background-color: rgb(243, 239, 239);
+            padding: 40px;
+            width: 50%;
+            margin-top: 4%;
+            text-align: center;
+            margin-left: 25%;
+            font-size: 210%;
+        }
+        .inpubox{
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>BOOK NOW</h1>
+    </div>
+
+    <section class="booking">
+        <form action="book_form.php" method="post" class="book-form">
+            <div class="flex">
+                <div class="inputbox">
+                    <span>Name</span>
+                    <input class="form-control" type="text" required placeholder="Enter your Name" name="name" >
+                </div>
+                <div class="inputbox">
+                    <span>Email</span>
+                    <input class="form-control mt-2" type="email" required placeholder="Enter your Email" name="email" >
+                </div>
+                <div class="inputbox">
+                    <span>Phone</span>
+                    <input class="form-control mt-2" type="number" required placeholder="Enter your Phone no." name="phone" >
+                </div>
+                <div class="inputbox">
+                    <span>Address</span>
+                    <input class="form-control mt-2"  type="text" required placeholder="Enter your Address" name="address" >
+                </div>
+                <div class="inputbox">
+                    <span>Where to</span>
+                    <input class="form-control mt-2" type="text" required placeholder="Place you want to visit" name="location" >
+                </div>
+                <div class="inputbox">
+                    <span>Guests No.</span>
+                    <input class="form-control mt-2" type="number" required placeholder="No. of Guests" name="guests" >
+                </div>
+                <div class="inputbox">
+                    <span>Arrivals</span>
+                    <input class="form-control mt-2" type="date" name="arrivals" >
+                </div>
+                <div class="inputbox">
+                    <span>Leaving</span>
+                    <input class="form-control mt-2" type="date" name="leaving" >
+                </div>
+            </div>
+            <input type="submit" value="Submit" class="btn2" name="send">
+
+        </form>
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,435 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Home</title>
+
+
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: #bc1e1e;
+            text-transform: capitalize;
+        }
+
+        html{
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+
+        
+        .header{
+            position: sticky;
+            z-index: 1000;
+            background-color: rgb(224, 223, 218);
+            padding: 5px;
+            display: flex;
+            padding-top: 3px;
+            padding-left: 7%;
+            font-size: 30px;
+            color: rgb(11, 11, 11);
+            text-shadow: grey;
+            
+        }
+        .navbar{
+            margin-left: 60%;
+            margin-top: 1%;
+            font-size: 20px;
+            color: rgb(252, 249, 249);
+            word-spacing: 5px;
+        }
+        * {box-sizing:border-box}
+
+        /* Slideshow container */
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        padding: 5px;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+        display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+        color: #131212;
+        font-style: bold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: transparent;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        .btn3{
+          padding: 10px;
+          font-size: 20px;
+          border-radius: 8px;
+          background-color: sandybrown;
+          color: white;
+          border: #131212;
+        }
+        .btn2{
+          padding: 10px;
+          margin-top: 1%;
+          font-size: 20px;
+          border-radius: 8px;
+          background-color: rgb(17, 17, 17);
+          color: white;
+        }
+        .btn1{
+          padding: 10px;
+          font-size: 20px;
+          border-radius: 8px;
+          background-color: rgb(96, 177, 244);
+          color: rgb(16, 16, 16);
+      
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+       @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+
+        .home-about{
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .home-about .about-img{
+          flex: 1 1 41rem;
+        }
+        .home-about .about-img img{
+          width: 65%;
+          margin-left: 40%;
+          margin-top: 8px;
+          margin-bottom: 1%;
+        }
+        .home-about .content{
+          flex: 1 1 41rem;
+          font-size: 15px;
+          background-color: lightblue;
+          border-radius: 8px;
+          padding: 45px;
+          margin-right: 16%;
+          margin-left: 3%;
+        }
+        .home-about .content .btn4{
+          margin-top: 1%;
+          padding: 5px;
+          font-size: 10px;
+          size: 10%;
+          border-radius: 8px;
+          background-color: rgb(17, 17, 17);
+          color: white;
+        }
+
+        .home-packages{
+          font-size: 20px;
+        }
+        .heading{
+          margin-top: 3%;
+          margin-left: 45%;
+          font-size: 30px;
+          font-family: 'Times New Roman', Times, serif;
+          font-style: bold;
+        }
+        .card{
+          width: 30%;
+          height: 40%;
+          margin-left: 4%;
+          margin-top: 1%;
+          padding: 17px;
+          border-radius: 12px;
+          background-color: aquamarine;
+        }
+        .image{
+          width: 97%;
+          margin-left: 1%;
+          margin-top: 0.01%;
+          margin-bottom: 4%;
+        }
+        .btn{
+          padding: 9px;
+          font-size: 15px;
+          margin-left: 40%;
+          margin-bottom: 2%;
+          background-color: #131212;
+          color: white;
+          border-radius: 8px;
+        }
+        .info{
+          text-align: center;
+        }
+        .context{
+          text-align: center;
+        }
+        .btnn{
+          padding: 10px;
+          font-size: 20px;
+          border-radius: 8px;
+          background-color: rgb(17, 17, 17);
+          color: white;
+          margin-left: 47%;
+        }
+        .context1{
+          text-align: center;
+        }
+        .card1{
+          width: 30%;
+          height: 40%;
+          margin-left: 36%;
+          margin-top: -19%;
+          padding: 17px;
+          border-radius: 12px;
+          background-color: aquamarine;
+        }
+        .context2{
+          text-align: center;
+
+        }
+        .card2{
+          width: 30%;
+          height: 40%;
+          margin-left: 68%;
+          margin-top: -19%;
+          padding: 17px;
+          border-radius: 12px;
+          background-color: aquamarine;
+        }
+        .image1{
+          width: 100%;
+          height: 107%;
+          margin-left: 1%;
+          margin-top: 0.01%;
+          margin-bottom: 4%;
+        }
+ </style>
+</head>
+<body>
+    
+<section class="header">
+    <h1 class="logo"> ACE Travels</h1>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="package.html">package</a>
+        <a href="book.html">book</a>
+    </nav>
+        
+</section>
+
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="taj.jpg" style="height: fit-content; width: 100%;">
+      <div class="text">DISCOVER MORE PLACES <br> <br><a href="package.html" class="btn1">Discover</a></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="trek.jpg" style="width:100%">
+      <div class="text">MAKE YOUR TOUR <br> WORTHWHILE <br> <br><a href="package.html" class="btn2">Discover</a></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="beach.jpg" style="height: 80%; width:100%">
+      <div class="text">TRAVEL THE WORLD <br> <br><a href="package.html" class="btn3">Discover</a></div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <section class="home-about">
+    <div class="about-img">
+      <img src="about.jpg" alt="">
+    </div>
+
+     <div class="content">
+      <h3>About us</h3>
+      <p>Travel is the main thing you purchase that makes you more extravagant”. <br> We, at ACE TRAVELS,
+      swear by this and put stock in satisfying travel dreams <br> that make you perpetually rich constantly.</p>
+      
+      <a href="about.html" class="btn4">read more</a>
+    </div>
+  </section>
+  
+
+  <section class="home-packages">
+    <h1 class="heading">Our Packages</h1>
+    <div class="card">
+        <img src="taj.jpg" class="image" alt="">
+        <div class="context">
+          <h3>Tourism</h3>
+          <p class="info">7 days trip with 25% off on first three bookings </p>
+          <br>
+        </div>
+        <a href="book.html" class="btn">Book Now</a>
+       
+    </div>
+    <div class="card1">
+    <img src="trek.jpg" class="image" alt="">
+        <div class="context1">
+          <h3>adventure</h3>
+          <p class="info">One day stay with camp-fire and breakfast complementary  </p>
+          <br>
+        </div>
+        <a href="book.html" class="btn">Book Now</a>
+    </div>
+    <div class="card2">
+      <img src="beach.jpg" class="image1" alt="">
+          <div class="context2">
+            <h3>Vacation</h3>
+            <p class="info">First 20 members will get 20% off on travelling </p>
+            <br>
+          </div>
+          <a href="book.html" class="btn">Book Now</a>
+      </div>
+    <br><br><br><br> <br><br> <br><br>
+    <div class="load-more"><a href="package.html" class="btnn">Load More</a></div>
+  </section>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }</script>
+
+
+</body>
+</html>
